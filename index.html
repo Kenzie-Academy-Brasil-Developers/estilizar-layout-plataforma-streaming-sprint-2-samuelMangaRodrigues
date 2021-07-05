@@ -20,7 +20,7 @@
 	<header class="topo">
 		<figure>
 			<img src="img/logo.png" alt="Kenzieflix">
-			<figcaption>Kenzieflix</figcaption>
+			<figcaption id="kenz">Kenzieflix</figcaption>
 		</figure>
 	</header>
 
@@ -34,12 +34,14 @@
 			</header>
 
 			<!-- LISTA DE USUÁRIOS -->
-			<ul>
+			<ul class="usuario">
 				
 				<!-- USUÁRIO 1 -->
-				<li>
+				<li class="usuario__users">
 					<figure>
-						<img src="img/avatar.png" alt="Gabriel">
+
+						<a href="#"><img src="img/avatar.png" alt="Gabriel"></a>
+						
 						<figcaption>Gabriel</figcaption>
 					</figure>
 
@@ -47,9 +49,9 @@
 				</li>
 				
 				<!-- USUÁRIO 2 -->
-				<li>
+				<li class="usuario__users">
 					<figure>
-						<img src="img/avatar1.png" alt="Maria">
+						<a href="#"><img src="img/avatar1.png" alt="Maria"></a>
 						<figcaption>Maria</figcaption>
 					</figure>
 
@@ -57,9 +59,9 @@
 				</li>
 				
 				<!-- USUÁRIO 3 -->
-				<li>
+				<li class="usuario__users">
 					<figure>
-						<img src="img/avatar2.png" alt="Renato">
+						<a href=""><img src="img/avatar2.png" alt="Renato"></a>
 						<figcaption>Renato</figcaption>
 					</figure>
 
@@ -69,7 +71,7 @@
 				<!-- ADICIONAR PERFIL-->
 				<li class="addPerfil">
 					<figure>
-						<img src="img/plus-sign.png" alt="Adicionar perfil">
+						<a href=""><img src="img/plus-sign.png" alt="Adicionar perfil"></a>
 						<figcaption>Adicionar perfil</figcaption>
 					</figure>
 
@@ -77,9 +79,8 @@
 				</li>
 
 			</ul>
-
-			<footer>
-				<button>Gerenciar Perfis</button>
+			<footer class="rodape">
+				<button class="rodape rodape__button">Gerenciar Perfis</button>
 			</footer>
 
 		</section>

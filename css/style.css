@@ -16,17 +16,28 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+  --fontfamily:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  --background:#00002e;
+  --fontcolor:#FFF;
+
 }
 
 /*BODY*/
 	body{
-
+		box-sizing: border-box;
+		font-family:var(--fontfamily);
+		background-color: var(--background);
+		color: var(--fontcolor);
 	}
 
 /*TOPO*/
-	header.topo{
-		
+	header.topo figure{
+		margin: 0%;
+		padding: 0%;
+		text-align: justify ;
+	}
+	figcaption{
+		display: none;
 	}
 
 /*RODAPÉ*/
@@ -34,5 +45,85 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
+		margin: 0 auto;
 		
 	}
+	li.usuario__users{
+		text-align: center;
+		list-style: none;
+		
+	}
+	ul.usuario{
+		display: flex;
+		justify-content:center;
+	}
+	.addPerfil{
+		list-style: none;
+		text-align: center;
+		padding-top: 30px;
+	}
+	li.addPerfil{
+		
+	
+	}
+	h2{
+		text-align: center;
+		font-size: 60px;
+	}
+	.usuario__users img{
+
+		width: 186px;
+		
+	}
+	h3{
+		color: grey;
+	}
+	li img:hover{
+		border: var(--fontcolor) 1px solid;
+		transition: 0.2s ease-in;
+	}
+	li h3:hover{
+		color: var(--fontcolor);
+		transition:0.3s ease-in;
+	}
+
+	footer.rodape{
+		text-align: right;
+		text-align: center;
+		width: 100%;
+		
+	}
+	button{
+		width: 200px;
+		height: 50px;
+		background-color: transparent;
+		color:grey;
+		font-family: var(--fontfamily);
+		border-radius: 8px;
+	}
+	button:hover{
+		color: white;
+		border-color:lightgoldenrodyellow;
+		transition: 0.5s ease-in;
+		
+
+	}
+	@media (min-width: 320px) and (max-width:1080px){
+		ul.usuario{
+			padding: 0%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		header.topo figure{
+			
+			text-align: center;
+	}
+	.addPerfil {
+		width: 266px;
+	}
+	footer.rodape{
+		width: 350px;
+		margin: 0 auto;
+	}
+	
+}
